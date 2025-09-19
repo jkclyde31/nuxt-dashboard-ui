@@ -24,11 +24,16 @@ import {
   SidebarFooter,
   SidebarHeader,
   SidebarRail,
+  useSidebar,
 } from '@/components/ui/sidebar'
+import SidebarTrigger from './ui/sidebar/SidebarTrigger.vue'
 
 const props = withDefaults(defineProps<SidebarProps>(), {
   collapsible: "icon",
 })
+
+// Get sidebar state
+const { state } = useSidebar()
 
 // This is sample data.
 const data = {
@@ -216,7 +221,6 @@ const data = {
     },
   ],
 
-
   projects: [
     {
       name: "Design Engineering",
@@ -238,22 +242,28 @@ const data = {
 </script>
 
 <template>
-  <Sidebar v-bind="props" >
+  <Sidebar v-bind="props">
     <!-- <SidebarHeader>
       <TeamSwitcher :teams="data.teams" />
     </SidebarHeader> -->
-    <NuxtImg
-      src="/logo.png"
-      alt="Logo"
-      width="115"
-      height="22"
-      class=" mt-[38px] mb-[42px] mx-[28px]"
+    <div 
+      class="flex items-center mt-[38px] mb-[42px]"
+      :class="state === 'collapsed' ? 'justify-center' : 'justify-between mx-[28px]'"
+    >
+      <NuxtImg
+        src="/logo.png"
+        alt="Logo"
+        width="115"
+        height="22"
+        class="block md:group-data-[state=collapsed]:hidden"
       />
-      <SearchForm/>
+      <SidebarTrigger />
+    </div>
+
+    <SearchForm/>
     <SidebarContent>
       <NavMain :items="data.navMain" />
-            <NavMain :items="data.navSecondary" />
-
+      <NavMain :items="data.navSecondary" />
       <!-- <NavProjects :projects="data.projects" /> -->
     </SidebarContent>
     <SidebarFooter>
