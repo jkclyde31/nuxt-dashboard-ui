@@ -17,6 +17,13 @@ body{
 
 }
 
+@theme {
+  --dark-mode: class;
+}
+
+
+
+
 /* ShadCN */
 @custom-variant dark (&:is(.dark *));
 
