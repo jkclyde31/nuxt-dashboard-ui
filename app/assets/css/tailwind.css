@@ -14,7 +14,10 @@ body{
   background: #1A1A1A;
   font-family: var(--font-family-barlow)  !important; 
   color: white;
+}
 
+.bg-sidebar {
+    background-color: white;
 }
 
 /* ShadCN */
