@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['shadcn-nuxt', '@nuxt/image', 'nuxt-keen-slider'],
+  modules: ['shadcn-nuxt', '@nuxt/image', 'nuxt-keen-slider', 'nuxt-charts'],
    css: [
   '~/assets/css/tailwind.css',
   'keen-slider/keen-slider.min.css'  

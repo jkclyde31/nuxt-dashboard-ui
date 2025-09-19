@@ -1,6 +1,6 @@
 <script lang="ts">
 export const iframeHeight = "800px"
-export const description = "A sidebar with collapsible sections."
+export const description = "Admin Dashboard built with Nuxt 4, Tailwind CSS, and Shadcn UI components."
 </script>
 
 <script setup lang="ts">
@@ -39,7 +39,7 @@ import { SidebarInset,  SidebarProvider, SidebarTrigger } from "~/components/ui/
             </BreadcrumbItem>
             <BreadcrumbSeparator class="hidden md:block" />
             <BreadcrumbItem>
-              <BreadcrumbPage>Data Fetching</BreadcrumbPage>
+              <BreadcrumbPage>Dashboard</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -47,6 +47,7 @@ import { SidebarInset,  SidebarProvider, SidebarTrigger } from "~/components/ui/
       <div class="flex flex-1 flex-col gap-4 p-4 lg:px-[42px] md:py-[32px]">
         <PageHeader />
         <MetricsCard />
+        <DashboardMain />
       </div>
     </SidebarInset>
   </SidebarProvider>
