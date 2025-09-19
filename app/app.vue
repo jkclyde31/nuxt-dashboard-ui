@@ -6,7 +6,7 @@
 
 <script setup>
 // Dark mode state
-const isDark = ref(false)
+const isDark = ref(true)
 
 // Toggle function
 const toggleDark = () => {
@@ -23,7 +23,7 @@ onMounted(() => {
   const savedTheme = localStorage.getItem('theme')
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
   
-  isDark.value = savedTheme === 'dark' || (!savedTheme && prefersDark)
+  // isDark.value = savedTheme === 'dark' || (!savedTheme && prefersDark)
   document.documentElement.classList.toggle('dark', isDark.value)
 })
 
