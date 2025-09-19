@@ -44,12 +44,8 @@ import { SidebarInset,  SidebarProvider, SidebarTrigger } from "~/components/ui/
           </BreadcrumbList>
         </Breadcrumb>
       </header>
-      <div class="flex flex-1 flex-col gap-4 p-4">
-        <!-- <div
-          v-for="i in 24"
-          :key="i"
-          class="aspect-video h-12 w-full rounded-lg bg-muted/50"
-        /> -->
+      <div class="flex flex-1 flex-col gap-4 p-4 lg:px-[42px] md:py-[32px]">
+        <PageHeader />
       </div>
     </SidebarInset>
   </SidebarProvider>
