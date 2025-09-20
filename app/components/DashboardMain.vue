@@ -3,27 +3,27 @@
    
     
     <!-- Main Grid Layout -->
- <div class="grid grid-cols-1 lg:grid-cols-2 bg-card border border-border rounded-[8px] overflow-hidden">
-  <!-- Total Revenue Chart -->
-  <div class="p-6 border-r border-border">
-    <TotalRevenueChart />
-  </div>
-
-  <!-- Right Column -->
-  <div class="p-6">
-    <div class="space-y-6">
-      <!-- Total Profit Chart -->
-      <div class="pb-6 border-b border-border">
-        <TotalProfitChart />
+    <div class="grid grid-cols-1 lg:grid-cols-2 bg-card border border-border rounded-[8px] overflow-hidden">
+      <!-- Total Revenue Chart -->
+      <div class="p-6 border-r border-border">
+        <TotalRevenueChart />
       </div>
-      
-      <!-- Total Sessions Chart -->
-      <div class="pt-6">
-        <TotalSessionsChart />
+
+      <!-- Right Column -->
+      <div class="">
+        <div class="space-y-6">
+          <!-- Total Profit Chart -->
+          <div class="border-b border-border">
+            <TotalProfitChart />
+          </div>
+          
+          <!-- Total Sessions Chart -->
+          <div class="">
+            <TotalSessionsChart />
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
     
     <!-- Optional: Add some footer or additional info -->
     <div class="mt-12 pt-6 border-t border-slate-800">

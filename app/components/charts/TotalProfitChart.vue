@@ -1,20 +1,20 @@
 <template>
   <Card class=" transition-all duration-300 group border-0">
-    <CardContent class="p-6">
+    <CardContent class="p-[15px] sm:p-[25px]">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-2">
           <BarChart3 class="h-4 w-4 text-purple-400 group-hover:text-purple-300 transition-colors" />
-          <span class="text-slate-400 text-sm group-hover:text-slate-300 transition-colors">Total profit</span>
+          <span class="text-slate-800 dark:text-slate-400 text-sm group-hover:text-slate-300 transition-colors">Total profit</span>
         </div>
         <button 
           @click="toggleView"
-          class="text-xs px-3 py-1 rounded-full bg-purple-600/20 text-purple-300 hover:bg-purple-600/30 transition-all duration-300 hover:scale-105"
+          class="text-xs px-3 py-1 rounded-full bg-purple-600 dark:bg-purple-600/20 text-purple-300 hover:bg-purple-600/30 transition-all duration-300 hover:scale-105"
         >
           {{ viewMode }}
         </button>
       </div>
       
-      <div class="text-3xl font-bold text-white mb-4 group-hover:text-purple-100 transition-colors">
+      <div class="text-3xl font-bold  mb-4 group-hover:text-purple-600 dark:group-hover:text-purple-100 transition-colors">
         $144.6K
       </div>
       
@@ -34,7 +34,7 @@
         <div class="absolute inset-0 rounded-lg border border-purple-500/0 group-hover:border-purple-500/30 transition-all duration-500"></div>
       </div>
       
-      <div class="flex items-center justify-between mt-4 pt-4 border-t border-slate-700 group-hover:border-slate-600 transition-colors">
+      <div class="flex items-center justify-between mt-4 pt-4  transition-colors">
         <div class="flex items-center gap-2">
           <div class="w-2 h-2 rounded-full bg-green-500 animate-pulse shadow-lg shadow-green-500/50"></div>
           <span class="text-slate-400 text-sm">Last 12 months</span>
@@ -82,7 +82,7 @@ const chartData = {
   Monthly: {
     labels: ['May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     datasets: [{
-      data: [115, 125, 135, 144.6, 155, 165, 175, 185],
+      data: [115, 125, 120, 144.6, 100, 165, 175, 205],
       backgroundColor: [
         'rgba(168, 85, 247, 0.6)',
         'rgba(168, 85, 247, 0.7)',

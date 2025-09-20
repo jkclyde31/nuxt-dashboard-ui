@@ -1,6 +1,6 @@
 <template>
   <Card class="transition-all duration-300 group border-0">
-    <CardContent class="p-6">
+    <CardContent class="p-[15px] sm:p-[25px]">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-2">
           <Eye class="h-4 w-4 text-blue-400 group-hover:text-blue-300 transition-colors" />

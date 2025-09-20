@@ -21,6 +21,10 @@ body{
   --dark-mode: class;
 }
 
+.bg-card{
+    padding: 0 0px;
+}
+
 
 
 

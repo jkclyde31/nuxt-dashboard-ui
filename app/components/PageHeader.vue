@@ -11,7 +11,7 @@
     <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-[20px] md:mb-[32px]  gap-[20px]">
         <!-- left -->
          <div>
-            <h2 class="font-semibold text-[24px] leading-[32px]">Welcome back, John</h2>
+            <h2 class="font-semibold text-[24px] leading-[32px]">Welcome back, Randall</h2>
             <p class="text-[12px] leading-[14px]">Measure your advertising ROI and report website traffic.</p>
          </div>
          <!-- right -->

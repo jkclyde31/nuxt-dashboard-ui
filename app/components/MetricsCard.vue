@@ -90,9 +90,3 @@ const metrics = mockData.metrics.map(metric => ({
   </div>
 </template>
 
-<style scoped>
-.bg-card{
-    padding: 0 0px;
-}
-</style>
-
