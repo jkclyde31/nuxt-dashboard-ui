@@ -1,6 +1,7 @@
 <template>
   <div :class="{ 'dark': isDark }">
     <NuxtPage />    
+
   </div>
 </template>
 
@@ -23,7 +24,7 @@ onMounted(() => {
   const savedTheme = localStorage.getItem('theme')
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
   
-  // isDark.value = savedTheme === 'dark' || (!savedTheme && prefersDark)
+  isDark.value = savedTheme === 'dark' || (!savedTheme && prefersDark)
   document.documentElement.classList.toggle('dark', isDark.value)
 })
 
