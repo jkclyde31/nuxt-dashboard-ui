@@ -69,6 +69,8 @@ defineProps<{
 
 
 <style scoped>
+
+
 .border-sidebar-border{
   border-left: 0;
 }

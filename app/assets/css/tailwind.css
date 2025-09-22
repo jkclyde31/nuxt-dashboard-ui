@@ -25,6 +25,10 @@ body{
     padding: 0 0px;
 }
 
+header{
+  z-index: 9999;
+}
+
 
 
 
