@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'dark': isDark }">
+  <div >
     <NuxtPage />    
 
   </div>
