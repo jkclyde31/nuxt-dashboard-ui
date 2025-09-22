@@ -213,7 +213,7 @@ const data = {
       <TeamSwitcher :teams="data.teams" />
     </SidebarHeader> -->
     <div 
-      class="flex items-center mt-[38px] mb-[42px]"
+      class="hidden md:flex items-center mt-[35px] md:mt-[38px] mb-[15px] md:mb-[42px]"
       :class="state === 'collapsed' ? 'justify-center' : 'justify-between mx-[28px]'"
     >
       <NuxtImg

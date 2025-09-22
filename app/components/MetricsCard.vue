@@ -56,7 +56,7 @@ const metrics = mockData.metrics.map(metric => ({
 </script>
 
 <template>
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 ">
     <Card 
       v-for="metric in metrics" 
       :key="metric.id"
