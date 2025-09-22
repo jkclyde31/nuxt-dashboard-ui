@@ -45,115 +45,116 @@ const data = {
   
   
   navMain: [
+    
     {
       title: "Dashboard",
-      url: "#",
+      url: "/",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
-          title: "All Pages",
-          url: "#",
+          title: "Home",
+          url: "/",
         },
         {
           title: "Reports",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Products",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Tasks",
-          url: "#",
+          url: "/inner",
         },
       ],
     },
     {
       title: "Features",
-      url: "#",
+      url: "/inner",
       icon: Bot,
       items: [
         {
           title: "Genesis",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Explorer",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Quantum",
-          url: "#",
+          url: "/inner",
         },
       ],
     },
     {
       title: "Users",
-      url: "#",
+      url: "/inner",
       icon: BookOpen,
       items: [
         {
           title: "Introduction",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Get Started",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Tutorials",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Changelog",
-          url: "#",
+          url: "/inner",
         },
       ],
     },
     {
       title: "Pricing",
-      url: "#",
+      url: "/inner",
       icon: Settings2,
       items: [
         {
           title: "General",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Team",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Billing",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Limits",
-          url: "#",
+          url: "/inner",
         },
       ],
     },
      {
       title: "Integration",
-      url: "#",
+      url: "/inner",
       icon: Settings2,
       items: [
         {
           title: "General",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Team",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Billing",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Limits",
-          url: "#",
+          url: "/inner",
         },
       ],
     },
@@ -162,25 +163,25 @@ const data = {
   navSecondary: [
     {
       title: "Settings",
-      url: "#",
+      url: "/inner",
       icon: SquareTerminal,
       isActive: true,
       items: [
         {
           title: "All Pages",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Reports",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Products",
-          url: "#",
+          url: "/inner",
         },
         {
           title: "Tasks",
-          url: "#",
+          url: "/inner",
         },
       ],
     },
@@ -190,17 +191,17 @@ const data = {
   projects: [
     {
       name: "Design Engineering",
-      url: "#",
+      url: "/inner",
       icon: Frame,
     },
     {
       name: "Sales & Marketing",
-      url: "#",
+      url: "/inner",
       icon: PieChart,
     },
     {
       name: "Travel",
-      url: "#",
+      url: "/inner",
       icon: Map,
     },
   ],

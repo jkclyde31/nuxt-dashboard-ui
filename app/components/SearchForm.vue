@@ -14,7 +14,7 @@ const { state } = useSidebar()
 
 <template>
   <form>
-    <SidebarGroup class="mt-[75px] py-0 0px md:mb-[32px]">
+    <SidebarGroup class="mt-[75px] md:mt-0 py-0 0px md:mb-[15px]">
       <SidebarGroupContent 
         class="relative"
         :class="state === 'collapsed' ? 'mx-0' : ''"
