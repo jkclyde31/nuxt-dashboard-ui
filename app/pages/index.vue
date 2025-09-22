@@ -44,7 +44,7 @@ import { SidebarInset,  SidebarProvider, SidebarTrigger } from "~/components/ui/
           </BreadcrumbList>
         </Breadcrumb>
       </header>
-      <div class="flex flex-1 flex-col gap-4 p-4 lg:px-[42px] md:py-[32px]">
+      <div class="flex flex-1 flex-col gap-[24px] p-4 lg:px-[42px] md:py-[32px]">
         <PageHeader />
         <MetricsCard />
         <DashboardMain />

@@ -1,8 +1,8 @@
 <template>
-  <Card class="w-full transition-all duration-300 border-0">
-    <CardContent class="p-3 sm:p-6">
+  <Card class="w-full h-full transition-all duration-300 border-0 flex flex-col">
+    <CardContent class="p-[15px] sm:p-[25px] flex-1 flex flex-col ">
       <!-- Header Section - Responsive layout -->
-      <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4 lg:mb-6 gap-4">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4 lg:mb-6 gap-4 flex-shrink-0">
         <div class="flex-shrink-0">
           <h3 class="text-white text-base sm:text-lg font-semibold mb-1">Total revenue</h3>
           <div class="text-2xl sm:text-3xl font-bold text-white mb-1">$240.8K</div>
@@ -29,13 +29,13 @@
         </div>
       </div>
       
-      <!-- Chart Container - Responsive height -->
-      <div class="h-48 sm:h-64 lg:h-80 relative w-full">
+      <!-- Chart Container - Takes remaining space -->
+      <div class="flex-1 relative w-full min-h-0">
         <canvas ref="revenueChart" class="w-full h-full"></canvas>
       </div>
       
       <!-- Footer - Responsive layout -->
-      <div class="flex flex-col sm:flex-row sm:items-center justify-between mt-4 pt-4 border-t border-slate-800 gap-2">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between mt-4 pt-4 border-t border-slate-800 gap-2 flex-shrink-0">
         <div class="text-slate-400 text-sm">
           <span class="text-white font-semibold">$125.2K</span> Jun 21, 2024
         </div>

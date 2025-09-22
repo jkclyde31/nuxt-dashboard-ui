@@ -1,110 +1,46 @@
 <template>
   <div class="">
-   
-    
     <!-- Main Grid Layout -->
-    <div class="grid grid-cols-1 lg:grid-cols-2 bg-card border border-border rounded-[8px] overflow-hidden">
+    <div class="grid grid-cols-1 lg:grid-cols-2 bg-card border border-border rounded-[8px] overflow-hidden min-h-[600px]">
       <!-- Total Revenue Chart -->
-      <div class="p-6 border-r border-border">
-        <TotalRevenueChart />
+      <div class="border-r border-border flex flex-col">
+        <div class="flex-1 h-full">
+          <TotalRevenueChart />
+        </div>
       </div>
 
       <!-- Right Column -->
-      <div class="">
-        <div class="space-y-6">
+      <div class="flex flex-col">
+        <div class="flex-1 flex flex-col">
           <!-- Total Profit Chart -->
-          <div class="border-b border-border">
+          <div class="flex-1 border-b border-border min-h-0">
             <TotalProfitChart />
           </div>
           
           <!-- Total Sessions Chart -->
-          <div class="">
+          <div class="flex-1 min-h-0">
             <TotalSessionsChart />
           </div>
         </div>
       </div>
     </div>
     
-    <!-- Optional: Add some footer or additional info -->
+    <!-- Footer -->
     <div class="mt-12 pt-6 border-t border-slate-800">
       <div class="flex items-center justify-between text-slate-500 text-sm">
-        <span>Last updated: {{ lastUpdated }}</span>
-        <button 
-          @click="refreshData" 
-          class="flex items-center gap-2 text-slate-400 hover:text-white transition-colors"
-          :disabled="isRefreshing"
-        >
-          <RefreshCw :class="['h-4 w-4', { 'animate-spin': isRefreshing }]" />
-          {{ isRefreshing ? 'Refreshing...' : 'Refresh Data' }}
-        </button>
+        <span>copyright 2025</span>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
-import { RefreshCw } from 'lucide-vue-next'
-
 import TotalRevenueChart from './charts/TotalRevenueChart.vue'
 import TotalProfitChart from './charts/TotalProfitChart.vue'
 import TotalSessionsChart from './charts/TotalSessionsChart.vue'
-
-// Reactive data
-const lastUpdated = ref('')
-const isRefreshing = ref(false)
-
-// Methods
-const refreshData = async () => {
-  isRefreshing.value = true
-  
-  // Simulate API call delay
-  await new Promise(resolve => setTimeout(resolve, 2000))
-  
-  lastUpdated.value = new Date().toLocaleString()
-  isRefreshing.value = false
-}
-
-const formatDateTime = () => {
-  return new Date().toLocaleString('en-US', {
-    month: 'short',
-    day: 'numeric',
-    year: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit'
-  })
-}
-
-// Lifecycle
-onMounted(() => {
-  lastUpdated.value = formatDateTime()
-  
-  // Auto-refresh every 5 minutes (optional)
-  setInterval(() => {
-    lastUpdated.value = formatDateTime()
-  }, 300000)
-})
-
-// Optional: Add keyboard shortcuts
-onMounted(() => {
-  const handleKeyPress = (event) => {
-    // Press 'R' to refresh
-    if (event.key.toLowerCase() === 'r' && !isRefreshing.value) {
-      refreshData()
-    }
-  }
-  
-  document.addEventListener('keydown', handleKeyPress)
-  
-  // Cleanup
-  onBeforeUnmount(() => {
-    document.removeEventListener('keydown', handleKeyPress)
-  })
-})
 </script>
 
 <style scoped>
-/* Optional: Add some custom animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -128,10 +64,10 @@ onMounted(() => {
   animation-delay: 0.2s;
 }
 
-/* Responsive improvements */
 @media (max-width: 1024px) {
   .grid {
     grid-template-columns: 1fr;
+    min-height: auto;
   }
 }
 </style>
