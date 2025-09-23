@@ -1,5 +1,5 @@
 <template>
-  <Card class=" transition-all duration-300 group border-0">
+  <Card class=" transition-all duration-300 group border-0 border-b-1">
     <CardContent class="p-[15px] sm:p-[25px]">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-2">
@@ -197,3 +197,12 @@ onBeforeUnmount(() => {
   if (profitChartInstance) profitChartInstance.destroy()
 })
 </script>
+
+<style scoped>
+.shadow-sm {
+  --tw-shadow: 0 0 #0000;
+  box-shadow: none !important; 
+}
+
+
+</style>

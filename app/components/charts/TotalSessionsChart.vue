@@ -191,8 +191,8 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .shadow-sm {
-  --tw-shadow: 0 0 #0000; /* removes shadow values */
-  box-shadow: none !important; /* disables the applied shadow */
+  --tw-shadow: 0 0 #0000;
+  box-shadow: none !important; 
 }
 
 
