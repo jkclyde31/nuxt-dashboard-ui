@@ -46,7 +46,7 @@ const { isMobile } = useSidebar()
             <span>{{ item.name }}</span>
           </a>
         </SidebarMenuButton>
-        <DropdownMenu>
+        <!-- <DropdownMenu>
           <DropdownMenuTrigger as-child>
             <SidebarMenuAction show-on-hover>
               <MoreHorizontal />
@@ -72,14 +72,9 @@ const { isMobile } = useSidebar()
               <span>Delete Project</span>
             </DropdownMenuItem>
           </DropdownMenuContent>
-        </DropdownMenu>
+        </DropdownMenu> -->
       </SidebarMenuItem>
-      <SidebarMenuItem>
-        <SidebarMenuButton class="text-sidebar-foreground/70">
-          <MoreHorizontal class="text-sidebar-foreground/70" />
-          <span>More</span>
-        </SidebarMenuButton>
-      </SidebarMenuItem>
+
     </SidebarMenu>
   </SidebarGroup>
 </template>

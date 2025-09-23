@@ -52,10 +52,7 @@ const data = {
       icon: SquareTerminal,
       isActive: true,
       items: [
-        {
-          title: "Home",
-          url: "/",
-        },
+       
         {
           title: "Reports",
           url: "/inner",
@@ -190,20 +187,20 @@ const data = {
 
   projects: [
     {
-      name: "Design Engineering",
-      url: "/inner",
+      name: "Home",
+      url: "/",
       icon: Frame,
     },
-    {
-      name: "Sales & Marketing",
-      url: "/inner",
-      icon: PieChart,
-    },
-    {
-      name: "Travel",
-      url: "/inner",
-      icon: Map,
-    },
+    // {
+    //   name: "Sales & Marketing",
+    //   url: "/inner",
+    //   icon: PieChart,
+    // },
+    // {
+    //   name: "Travel",
+    //   url: "/inner",
+    //   icon: Map,
+    // },
   ],
 }
 </script>
@@ -229,9 +226,10 @@ const data = {
 
     <SearchForm/>
     <SidebarContent>
+      <NavProjects :projects="data.projects" />
+
       <NavMain :items="data.navMain" />
-      <NavMain :items="data.navSecondary" />
-      <!-- <NavProjects :projects="data.projects" /> -->
+      
     </SidebarContent>
     <SidebarFooter>
       <NavUser :user="data.user" />
