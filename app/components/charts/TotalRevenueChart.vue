@@ -4,8 +4,8 @@
       <!-- Header Section - Responsive layout -->
       <div class="flex flex-col lg:flex-row lg:items-center justify-between mb-4 lg:mb-6 gap-4 flex-shrink-0">
         <div class="flex-shrink-0">
-          <h3 class="text-white text-base sm:text-lg font-semibold mb-1">Total revenue</h3>
-          <div class="text-2xl sm:text-3xl font-bold text-white mb-1">$240.8K</div>
+          <h3 class=" text-base sm:text-lg font-semibold mb-1">Total revenue</h3>
+          <div class="text-2xl sm:text-3xl font-bold  mb-1">$240.8K</div>
           <div class="flex items-center gap-1">
             <TrendingUp class="h-3 w-3 text-green-500" />
             <span class="text-green-500 text-sm">23.6%</span>
@@ -37,7 +37,7 @@
       <!-- Footer - Responsive layout -->
       <div class="flex flex-col sm:flex-row sm:items-center justify-between mt-4 pt-4 border-t border-slate-800 gap-2 flex-shrink-0">
         <div class="text-slate-400 text-sm">
-          <span class="text-white font-semibold">$125.2K</span> Jun 21, 2024
+          <span class=" font-semibold">$125.2K</span> Jun 21, 2024
         </div>
         <div class="flex items-center gap-1">
           <TrendingUp class="h-3 w-3 text-green-500" />

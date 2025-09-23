@@ -3,8 +3,8 @@
     <CardContent class="p-[15px] sm:p-[25px]">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-2">
-          <BarChart3 class="h-4 w-4 text-purple-400 group-hover:text-purple-300 transition-colors" />
-          <span class="text-slate-800 dark:text-slate-400 text-sm group-hover:text-slate-300 transition-colors">Total profit</span>
+          <BarChart3 class="h-4 w-4 text-purple-400  transition-colors" />
+          <span class="text-slate-800 dark:text-slate-400 text-sm  transition-colors">Total profit</span>
         </div>
         <button 
           @click="toggleView"
@@ -14,7 +14,7 @@
         </button>
       </div>
       
-      <div class="text-3xl font-bold  mb-4 group-hover:text-purple-600 dark:group-hover:text-purple-100 transition-colors">
+      <div class="text-3xl font-bold  mb-4  transition-colors">
         $144.6K
       </div>
       
@@ -31,7 +31,7 @@
         <!-- Gradient overlay for depth -->
         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/40 via-transparent to-transparent pointer-events-none rounded-lg"></div>
         <!-- Animated border glow on hover -->
-        <div class="absolute inset-0 rounded-lg border border-purple-500/0 group-hover:border-purple-500/30 transition-all duration-500"></div>
+        <div class="absolute inset-0 rounded-lg border border-purple-500/0  transition-all duration-500"></div>
       </div>
       
       <div class="flex items-center justify-between mt-4 pt-4  transition-colors">

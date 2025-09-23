@@ -3,16 +3,13 @@
     <CardContent class="p-[15px] sm:p-[25px]">
       <div class="flex items-center justify-between mb-4">
         <div class="flex items-center gap-2">
-          <Eye class="h-4 w-4 text-blue-400 group-hover:text-blue-300 transition-colors" />
-          <span class="text-slate-400 text-sm group-hover:text-slate-300 transition-colors">Total sessions</span>
+          <Eye class="h-4 w-4 text-blue-400  transition-colors" />
+          <span class="text-slate-800 dark:text-slate-400 text-sm  transition-colors">Total sessions</span>
         </div>
-        <div class="flex items-center gap-2">
-          <div class="w-2 h-2 rounded-full bg-red-500 animate-ping"></div>
-          <span class="text-red-400 text-xs font-semibold">LIVE</span>
-        </div>
+    
       </div>
       
-      <div class="text-3xl font-bold text-white mb-4 group-hover:text-blue-100 transition-colors">
+      <div class="text-3xl font-bold  mb-4  transition-colors">
         400
       </div>
       
@@ -39,7 +36,7 @@
             <div class="absolute inset-0 w-2 h-2 rounded-full bg-green-500 animate-ping"></div>
           </div>
           <span class="text-slate-400 text-sm">Live</span>
-          <span class="text-white text-sm font-semibold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
+          <span class=" text-sm font-semibold bg-gradient-to-r from-green-400 to-blue-400 bg-clip-text text-transparent">
             10k visitors
           </span>
         </div>
@@ -191,3 +188,12 @@ onBeforeUnmount(() => {
   if (sessionsChartInstance) sessionsChartInstance.destroy()
 })
 </script>
+
+<style scoped>
+.shadow-sm {
+  --tw-shadow: 0 0 #0000; /* removes shadow values */
+  box-shadow: none !important; /* disables the applied shadow */
+}
+
+
+</style>

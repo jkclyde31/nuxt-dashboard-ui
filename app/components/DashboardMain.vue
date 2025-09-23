@@ -13,7 +13,7 @@
       <div class="flex flex-col">
         <div class="flex-1 flex flex-col">
           <!-- Total Profit Chart -->
-          <div class="flex-1 border-b border-border min-h-0">
+          <div class="flex-1 border-b border-border z-10 min-h-0">
             <TotalProfitChart />
           </div>
           
