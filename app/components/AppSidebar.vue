@@ -52,7 +52,10 @@ const data = {
       icon: SquareTerminal,
       isActive: true,
       items: [
-       
+        {
+          title: "Home",
+          url: "/",
+        },
         {
           title: "Reports",
           url: "/inner",
@@ -226,7 +229,7 @@ const data = {
 
     <SearchForm/>
     <SidebarContent>
-      <NavProjects :projects="data.projects" />
+      <!-- <NavProjects :projects="data.projects" /> -->
 
       <NavMain :items="data.navMain" />
       
