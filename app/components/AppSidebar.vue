@@ -34,6 +34,8 @@ const props = withDefaults(defineProps<SidebarProps>(), {
 
 // Get sidebar state
 const { state } = useSidebar()
+const colorMode = useColorMode()
+
 
 // This is sample data.
 const data = {
@@ -218,7 +220,7 @@ const data = {
       :class="state === 'collapsed' ? 'justify-center' : 'justify-between mx-[28px]'"
     >
       <NuxtImg
-        src="/logo.png"
+    :src="colorMode.value === 'dark' ? '/logo.png' : '/dark-logo.png'"
         alt="Logo"
         width="115"
         height="22"
