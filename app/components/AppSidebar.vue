@@ -220,7 +220,7 @@ const data = {
       :class="state === 'collapsed' ? 'justify-center' : 'justify-between mx-[28px]'"
     >
       <NuxtImg
-    :src="colorMode.value === 'dark' ? '/logo.png' : '/dark-logo.png'"
+    :src="colorMode.value === 'dark' ? '/logo.png' : '/logo.png'"
         alt="Logo"
         width="115"
         height="22"

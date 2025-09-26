@@ -38,6 +38,16 @@ const props = defineProps<{
 }>()
 
 const { isMobile } = useSidebar()
+
+// Get the logout function from the global provide with proper typing
+const logout = inject<() => void>('logout')
+
+// Handle logout click
+const handleLogout = () => {
+  if (logout) {
+    logout()
+  }
+}
 </script>
 
 <template>
@@ -96,7 +106,7 @@ const { isMobile } = useSidebar()
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />
-          <DropdownMenuItem>
+          <DropdownMenuItem @click="handleLogout">
             <LogOut />
             Log out
           </DropdownMenuItem>

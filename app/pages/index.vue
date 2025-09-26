@@ -1,7 +1,11 @@
-<script setup lang="ts">
+<script setup>
+// THIS IS THE KEY - tell the page to use dashboard layout
 definePageMeta({
+  layout: 'dashboard',
   title: 'Dashboard'
 })
+
+const logout = inject('logout')
 </script>
 
 <template>
