@@ -33,7 +33,7 @@ const handleLogin = () => {
                 Welcome back
               </h1>
               <p class="text-muted-foreground text-balance">
-                Login to your Acme Inc account
+                Login to your Clyde Corp account
               </p>
             </div>
             <div class="grid gap-3">
