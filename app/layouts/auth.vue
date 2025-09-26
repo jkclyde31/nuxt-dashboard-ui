@@ -1,11 +1,5 @@
 <template>
-  <div class="min-h-screen flex items-center justify-center bg-background">
-    <div class="w-full max-w-md p-6">
+    <div class="">
       <slot />
     </div>
-  </div>
 </template>
-
-<script setup>
-// Simple auth layout - just centers the content
-</script>
